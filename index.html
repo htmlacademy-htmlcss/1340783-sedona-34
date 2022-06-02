@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class = "page-header">
@@ -33,17 +34,21 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="button navigation-link" href="#">Хочу сюда</a>
+            <a class="button navigation-link-button" href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-index">
         <section class="welcome">
-          <h1 class="visually-hidden">Сайт города Седона</h1>
-          <img class="logo" src ="/images/svg/welcome.svg" width="458" height="352" alt="логотип города Седона">
-          <p class="slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="slogan-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+          <div class="welcome-start">
+            <img class="logo" src ="/images/svg/welcome.svg" width="458" height="352" alt="логотип города Седона">
+          </div>
+          <div class="welcome-sedona">
+            <h1 class="visually-hidden">Сайт города Седона</h1>
+            <p class="slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="slogan-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
         </section>
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
@@ -53,21 +58,21 @@
               <span class="advantages-number">— №1 —</span>
               <p class="advantages-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
               <img class="advantages-photo" src ="images/jpg/photo-town.jpg" width="800" height="384" alt="фотография города Седона">
+            <ul class="advantages-inner-list">
+              <li class="advantages-inner-item">
+                <h3 class="advantages-title">Жилье</h3>
+                <p class="advantages-description">Рекомендуем пожить в ностоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="advantages-inner-item">
+                <h3 class="advantages-title">Еда</h3>
+                <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="advantages-inner-item">
+                <h3 class="advantages-title">Сувениры</h3>
+                <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
+              </li>
+            </ul>
             </li>
-              <ul class="advantages-list">
-                <li class="advantages-item">
-                  <h3 class="advantages-title">Жилье</h3>
-                  <p class="advantages-description">Рекомендуем пожить в ностоящем мотеле, все как в кино!</p>
-                </li>
-                <li class="advantages-item">
-                  <h3 class="advantages-title">Еда</h3>
-                  <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-                </li>
-                <li class="advantages-item">
-                  <h3 class="advantages-title">Сувениры</h3>
-                  <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
-                </li>
-              </ul>
             <li class="advantages-item">
               <h3 class="advantages-title">Там есть мост дьявола</h3>
               <span class="advantages-number">— №2 —</span>
@@ -101,8 +106,8 @@
           <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for = "subscription-field">Ваш e-mail</label>
-              <input class="subscription-email" type = "email" name = "subscription-email" placeholder="Ваш e-mail" id = "subscription-field">
-              <button class="button subscription-button" type = "submit">Подписаться</button>
+            <input class="subscription-email" type = "email" name = "subscription-email" placeholder="Ваш e-mail" id = "subscription-field">
+            <button class="button subscription-button" type = "submit">Подписаться</button>
           </form>
         </section>
 
@@ -127,7 +132,7 @@
             </a>
           </li>
         </ul>
-        <a class="footer-link" href="tel:+78128121212">+7(812)812-12-12</a>
+        <a class="footer-link" href="tel:+78128121212"><div class="footer-link-number">+7(812)812-12-12</div></a>
         <a class="htmlacademy-logo">
           <span class="visually-hidden">Штмл академия</span>
         </a>
